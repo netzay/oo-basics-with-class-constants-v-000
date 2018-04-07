@@ -18,4 +18,4 @@ class Shoe
     BRANDS.each do |brands|
       binding.pry 
     end
-  
+  end
