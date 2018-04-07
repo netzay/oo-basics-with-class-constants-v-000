@@ -16,8 +16,8 @@ class Shoe
   def brand=(brand)
     @brand = brand
     brand.each do |brands|
-      binding.pry 
       puts "#{brands}"
+      binding.pry 
     end
   end
 end
