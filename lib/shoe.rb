@@ -15,6 +15,7 @@ class Shoe
   
   def brand=(brand)
     @brand = brand
+    binding.pry 
     brand.each do |brands|
       if !brands.include?(BRANDS)
         BRANDS << brands
