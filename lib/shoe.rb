@@ -16,6 +16,9 @@ class Shoe
   def brand=(brand)
     @brand = brand
     brand.each do |brands|
+      if !brands.include?(BRANDS)
+        BRANDS << brands
+      end
     end
   end
 end
