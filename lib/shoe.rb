@@ -15,9 +15,7 @@ class Shoe
   
   def brand=(brand)
     @brand = brand
-    brands.each do |brand|
-        Shoe.new(brand)
-      end
+   BRANDS << !brand
    
   end
   
