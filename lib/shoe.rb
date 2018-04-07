@@ -20,3 +20,4 @@ class Shoe
       puts brands
     end
   end
+end
