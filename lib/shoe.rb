@@ -8,22 +8,13 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-
+      if !BRANDS.include?(brand)
+        BRANDS << brand
+      end
   end
+end
 
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-  
-  def brand=(brand)
-    binding.pry 
-    @brand = brand
-  
-    brand.each do |brands|
-      if !brands.include?(BRANDS)
-        BRANDS << brands
-      end
-    end
-  end
-end
