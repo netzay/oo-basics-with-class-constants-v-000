@@ -17,5 +17,6 @@ class Shoe
     @brand = brand
     brand.each do |brands|
       binding.pry 
+      puts brands
     end
   end
