@@ -8,7 +8,6 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    binding.pry 
 
   end
 
@@ -18,7 +17,9 @@ class Shoe
   end
   
   def brand=(brand)
+    binding.pry 
     @brand = brand
+  
     brand.each do |brands|
       if !brands.include?(BRANDS)
         BRANDS << brands
